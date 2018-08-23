@@ -11,4 +11,6 @@
 	<context:component-scan base-package="tk.mybatis" />
     <import resource="/spring/spring-datasource.xml"/>
     <import resource="/spring/spring-beans.xml" />
-  </beans>
+    <import resource="/spring/spring-redis.xml" />
+
+</beans>

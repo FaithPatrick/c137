@@ -113,8 +113,6 @@
 			name="sqlSessionFactoryBeanName"
 			value="sqlSessionFactory" />
 	</bean>
-
-
 	<!-- 对数据源进行事务管理 -->
 	<bean
 		id="transactionManager"
