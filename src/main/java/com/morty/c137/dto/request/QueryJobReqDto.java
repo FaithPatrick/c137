@@ -1,6 +1,10 @@
 package com.morty.c137.dto.request;
 
-public class QueryJobReqDto {
+import java.io.Serializable;
+
+public class QueryJobReqDto implements Serializable{
+
+    private static final long serialVersionUID = -774844185816964567L;
 
     private Integer id;
 

@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.Date;
-import java.util.List;
 
 @RestController
 @RequestMapping("/job")
@@ -21,14 +20,9 @@ public class JobController {
 
 
     @GetMapping
-    public Result index() {
-        // TODO params load from GET
-        int id = 1;
-        QueryJobReqDto queryJobReqDto = new QueryJobReqDto();
-        queryJobReqDto.setId(id);
-        //分页后的数据
-        PageInfo pageInfo = jobBiz.listJobPaging(queryJobReqDto);
-        return ResultGenerator.genSuccessResult(pageInfo);
+    public Result index(QueryJobReqDto queryJobReqDto) {
+        PageInfo jobs = jobBiz.listJobPaging(queryJobReqDto);
+        return ResultGenerator.genSuccessResult(jobs);
     }
 
     @GetMapping("/{id}")
