@@ -3,29 +3,28 @@ package com.morty.c137.po;
 import java.util.Date;
 import javax.persistence.*;
 
-public class Job {
+public class User {
     @Id
     private Integer id;
 
     /**
-     * job name
+     * 用户名
      */
-    private String name;
+    private String username;
 
     /**
-     * job description
+     * 密码
      */
-    @Column(name = "`desc`")
-    private String desc;
+    private String password;
 
     /**
-     * create time
+     * 创建时间
      */
     @Column(name = "create_time")
     private Date createTime;
 
     /**
-     * update time
+     * 更新时间
      */
     @Column(name = "update_time")
     private Date updateTime;
@@ -45,72 +44,72 @@ public class Job {
     }
 
     /**
-     * 获取job name
+     * 获取用户名
      *
-     * @return name - job name
+     * @return username - 用户名
      */
-    public String getName() {
-        return name;
+    public String getUsername() {
+        return username;
     }
 
     /**
-     * 设置job name
+     * 设置用户名
      *
-     * @param name job name
+     * @param username 用户名
      */
-    public void setName(String name) {
-        this.name = name == null ? null : name.trim();
+    public void setUsername(String username) {
+        this.username = username == null ? null : username.trim();
     }
 
     /**
-     * 获取job description
+     * 获取密码
      *
-     * @return desc - job description
+     * @return password - 密码
      */
-    public String getDesc() {
-        return desc;
+    public String getPassword() {
+        return password;
     }
 
     /**
-     * 设置job description
+     * 设置密码
      *
-     * @param desc job description
+     * @param password 密码
      */
-    public void setDesc(String desc) {
-        this.desc = desc == null ? null : desc.trim();
+    public void setPassword(String password) {
+        this.password = password == null ? null : password.trim();
     }
 
     /**
-     * 获取create time
+     * 获取创建时间
      *
-     * @return create_time - create time
+     * @return create_time - 创建时间
      */
     public Date getCreateTime() {
         return createTime;
     }
 
     /**
-     * 设置create time
+     * 设置创建时间
      *
-     * @param createTime create time
+     * @param createTime 创建时间
      */
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
     }
 
     /**
-     * 获取update time
+     * 获取更新时间
      *
-     * @return update_time - update time
+     * @return update_time - 更新时间
      */
     public Date getUpdateTime() {
         return updateTime;
     }
 
     /**
-     * 设置update time
+     * 设置更新时间
      *
-     * @param updateTime update time
+     * @param updateTime 更新时间
      */
     public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;

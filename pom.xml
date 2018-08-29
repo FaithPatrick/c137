@@ -211,6 +211,12 @@
             <artifactId>spring-test</artifactId>
             <version>4.3.11.RELEASE</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring</artifactId>
+            <version>1.4.0</version>
+        </dependency>
     </dependencies>
 
 	<build>
@@ -262,7 +268,7 @@
                     -->
                     <configurationFile>${basedir}/src/main/resources/mybatis/generatorConfig.xml</configurationFile>
                     <!--如果有po文件存在 是否覆盖 默认否-->
-                    <overwrite>false</overwrite>
+                    <overwrite>true</overwrite>
                     <verbose>true</verbose>
                 </configuration>
                 <dependencies>
@@ -271,6 +277,11 @@
                         <groupId>mysql</groupId>
                         <artifactId>mysql-connector-java</artifactId>
                         <version>${mysql.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>tk.mybatis</groupId>
+                        <artifactId>mapper</artifactId>
+                        <version>3.4.3</version>
                     </dependency>
                 </dependencies>
             </plugin>

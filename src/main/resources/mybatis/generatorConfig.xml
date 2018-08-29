@@ -4,10 +4,15 @@
     <context id="context1" defaultModelType="flat">
         <!-- 指定生成的java文件的编码,没有直接生成到项目时中文可能会乱码 -->
         <property name="javaFileEncoding" value="UTF-8"/>
+
+        <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
+            <property name="mappers" value="tk.mybatis.mapper.common.Mapper"/>
+        </plugin>
+
         <!--数据库链接地址账号密码-->
-        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost/job?serverTimezone=Hongkong&amp;autoReconnect=true&amp;failOverReadOnly=false&amp;tinyInt1isBit=false"
-                        userId="root" password="tt12345">
+        <jdbcConnection driverClass="${morty.jdbc.driver}"
+                        connectionURL="${morty.jdbc.url}"
+                        userId="${morty.jdbc.username}" password="${morty.jdbc.password}">
         </jdbcConnection>
         <javaTypeResolver>
             <property name="forceBigDecimals" value="false"/>
@@ -17,10 +22,18 @@
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
+
+        <sqlMapGenerator targetPackage="sqlmap"  targetProject="src/main/resources"/>
+
+        <javaClientGenerator targetPackage="com.morty.c137.dao" targetProject="src/main/java" type="XMLMAPPER" />
+
         <!--生成对应表及类名-->
-        <table tableName="job" domainObjectName="Job" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true"
-               enableSelectByExample="true" selectByExampleQueryId="true"></table>
-        
-        
+        <table tableName="job" domainObjectName="Job" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false"></table>
+        <table tableName="user" domainObjectName="User" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false"></table>
+
     </context>
 </generatorConfiguration>

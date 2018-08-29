@@ -4,8 +4,6 @@ import com.github.pagehelper.PageInfo;
 import com.morty.c137.dto.request.QueryJobReqDto;
 import com.morty.c137.po.Job;
 
-import java.util.List;
-
 public interface JobBiz {
 
     public Job getJob(int id);
