@@ -15,8 +15,7 @@ public class Job {
     /**
      * job description
      */
-    @Column(name = "`desc`")
-    private String desc;
+    private String description;
 
     /**
      * create time
@@ -65,19 +64,19 @@ public class Job {
     /**
      * 获取job description
      *
-     * @return desc - job description
+     * @return description - job description
      */
-    public String getDesc() {
-        return desc;
+    public String getDescription() {
+        return description;
     }
 
     /**
      * 设置job description
      *
-     * @param desc job description
+     * @param description job description
      */
-    public void setDesc(String desc) {
-        this.desc = desc == null ? null : desc.trim();
+    public void setDescription(String description) {
+        this.description = description == null ? null : description.trim();
     }
 
     /**

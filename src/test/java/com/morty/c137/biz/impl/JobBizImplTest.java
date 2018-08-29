@@ -32,7 +32,7 @@ public class JobBizImplTest extends AbstractTestNGSpringContextTests {
             job.setId(id);
             job.setCreateTime(new Date());
             job.setUpdateTime(new Date());
-            job.setDesc("Desc");
+            job.setDescription("Desc");
             job.setName("Name");
             int refNu = jobMapper.insertSelective(job);
             Assert.assertEquals(refNu, 1);
@@ -73,7 +73,7 @@ public class JobBizImplTest extends AbstractTestNGSpringContextTests {
             job.setId(id);
             job.setCreateTime(new Date());
             job.setUpdateTime(new Date());
-            job.setDesc("Desc");
+            job.setDescription("Desc");
             job.setName("Name");
             jobMapper.insertSelective(job);
             return job;

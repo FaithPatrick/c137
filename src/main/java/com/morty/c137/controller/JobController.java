@@ -35,7 +35,7 @@ public class JobController {
     public Result add(@RequestParam("name") String name, @RequestParam("desc") String desc) {
         Job job = new Job();
         job.setName(name);
-        job.setDesc(desc);
+        job.setDescription(desc);
         job.setUpdateTime(new Date());
         job.setCreateTime(new Date());
         if (jobBiz.saveJob(job)) {
@@ -49,7 +49,7 @@ public class JobController {
                          @RequestParam("desc") String desc) {
         Job job = jobBiz.getJob(id);
         job.setName(name);
-        job.setDesc(desc);
+        job.setDescription(desc);
         job.setUpdateTime(new Date());
         if (jobBiz.updateJob(job)) {
             return ResultGenerator.genSuccessResult();
