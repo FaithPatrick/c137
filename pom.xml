@@ -217,6 +217,20 @@
             <artifactId>shiro-spring</artifactId>
             <version>1.4.0</version>
         </dependency>
+
+        <!--用于检测JSON格式的响应数据-->
+        <dependency>
+            <groupId>com.jayway.jsonpath</groupId>
+            <artifactId>json-path</artifactId>
+            <version>2.4.0</version>
+        </dependency>
+
+        <!--Fake data-->
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>0.16</version>
+        </dependency>
     </dependencies>
 
 	<build>
