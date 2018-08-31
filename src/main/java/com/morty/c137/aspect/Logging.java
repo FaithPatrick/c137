@@ -9,7 +9,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class Logging {
 
-
     // 切面
     // 定义切入点 在这里 将拦截com.morty.c137.controller.*Controller.*的所有方法
     @AfterReturning(pointcut = "execution(* com.morty.c137.controller.*Controller.*(..))",
