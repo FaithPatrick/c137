@@ -4,7 +4,7 @@ package com.morty.c137.core;
  * 统一API响应结果封装
  */
 public class Result<T> {
-    private int code;
+    private Integer code;
     private String message;
     private T data;
 
