@@ -2,17 +2,17 @@ package com.morty.c137.biz;
 
 import com.github.pagehelper.PageInfo;
 import com.morty.c137.dto.PageableDto;
-import com.morty.c137.po.Resource;
+import com.morty.c137.po.Message;
 
 public interface MessageBiz {
 
-    public Resource getById(int id);
+    public Message getById(int id);
 
-    public PageInfo<Resource> list(PageableDto pageableDto);
+    public PageInfo<Message> list(PageableDto pageableDto);
 
-    public Resource save(Resource job);
+    public Message save(Message job);
 
-    public Resource update(Resource job);
+    public Message update(Message job);
 
     public Boolean delete(int id);
 }

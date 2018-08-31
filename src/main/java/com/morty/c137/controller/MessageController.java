@@ -5,6 +5,7 @@ import com.morty.c137.biz.MessageBiz;
 import com.morty.c137.core.Result;
 import com.morty.c137.core.ResultGenerator;
 import com.morty.c137.dto.PageableDto;
+import com.morty.c137.po.Message;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -30,12 +31,12 @@ public class MessageController  {
 
     @GetMapping("/{id}")
     public Result getById(@PathVariable("id") Integer id) {
-        com.morty.c137.po.Resource resource = messageBiz.getById(id);
+        Message resource = messageBiz.getById(id);
         return ResultGenerator.genSuccessResult(resource);
     }
 
     @PostMapping
-    public Result save(com.morty.c137.po.Resource resource) {
+    public Result save(Message resource) {
         if (messageBiz.save(resource) != null) {
             return ResultGenerator.genSuccessResult();
         }
@@ -43,7 +44,7 @@ public class MessageController  {
     }
 
     @PutMapping("/{id}")
-    public Result update(@PathVariable("id") Integer id, com.morty.c137.po.Resource resource) {
+    public Result update(@PathVariable("id") Integer id, Message resource) {
         if (messageBiz.update(resource) != null) {
             return ResultGenerator.genSuccessResult();
         }
