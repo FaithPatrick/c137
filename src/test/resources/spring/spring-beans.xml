@@ -6,6 +6,7 @@
 	xmlns:tx="http://www.springframework.org/schema/tx"
 	xmlns:util="http://www.springframework.org/schema/util"
 	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop = "http://www.springframework.org/schema/aop"
 	xsi:schemaLocation="
 	 http://www.springframework.org/schema/beans
      http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
@@ -15,7 +16,7 @@
      http://www.springframework.org/schema/util/spring-util-2.5.xsd
      http://www.springframework.org/schema/context  
   	 http://www.springframework.org/schema/context/spring-context-4.2.xsd">
-
+	<aop:aspectj-autoproxy/>
 	<bean
 		id="taskExecutor"
 		class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
@@ -36,6 +37,7 @@
 			name="queueCapacity"
 			value="1000" />
 	</bean>
+
 	<!-- 引入staging配置文件 -->
 	<bean
 		id="propertyConfigurer"
@@ -48,7 +50,5 @@
 		</property>
 		<property name="fileEncoding" value="utf-8" />
 	</bean>
-
-	
-
+    <bean id ="logging" class = "com.morty.c137.aspect.Logging"/>
 </beans>
