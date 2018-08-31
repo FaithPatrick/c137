@@ -58,7 +58,7 @@ public class JobController {
     }
 
     @DeleteMapping("/{id}")
-    public Result delete(@PathVariable("id") int id) {
+    public Result delete(@PathVariable("id") Integer id) {
         if (jobBiz.deleteJob(id)) {
             return ResultGenerator.genSuccessResult();
         }
