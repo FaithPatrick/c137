@@ -5,16 +5,26 @@
        xmlns:tx="http://www.springframework.org/schema/tx"
        xmlns:util="http://www.springframework.org/schema/util"
        xmlns:context="http://www.springframework.org/schema/context"
-       xsi:schemaLocation="
-	 http://www.springframework.org/schema/beans
+       xmlns:aop = "http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
      http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
      http://www.springframework.org/schema/tx
      http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
      http://www.springframework.org/schema/util 
      http://www.springframework.org/schema/util/spring-util-2.5.xsd
      http://www.springframework.org/schema/context  
-  	 http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+  	 http://www.springframework.org/schema/context/spring-context-4.2.xsd
+  	 http://www.springframework.org/schema/aop
+  	 http://www.springframework.org/schema/aop/spring-aop.xsd">
 
+    <!--引入AOP
+    注意 如果不引入上面的xsd会出现问题
+     http://www.springframework.org/schema/aop
+  	 http://www.springframework.org/schema/aop/spring-aop.xsd
+  	 xmlns:aop = "http://www.springframework.org/schema/aop"
+
+    -->
+    <aop:aspectj-autoproxy/>
     <bean id="taskExecutor" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
         <!-- 最小容量 -->
         <property name="corePoolSize" value="10"/>
