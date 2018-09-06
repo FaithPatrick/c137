@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a2c0358-d0bd-4a40-bd45-4bb5c9d88628" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/RAEDME.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/RAEDME.md" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,12 +14,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RAEDME.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/RAEDME.md">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor>
-                <caret column="8" selection-start-column="8" selection-end-column="8" />
+                <caret column="5" selection-start-column="5" selection-end-column="5" />
               </first_editor>
               <second_editor />
             </state>
@@ -36,8 +36,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.travis.yml" />
-        <option value="$PROJECT_DIR$/web/README.md" />
         <option value="$PROJECT_DIR$/web/RAEDME.md" />
+        <option value="$PROJECT_DIR$/web/README.md" />
       </list>
     </option>
   </component>
@@ -93,6 +93,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\12528\IdeaProjects\c137\web" />
       <recent name="C:\Users\12528\IdeaProjects\c137" />
     </key>
   </component>
@@ -162,12 +163,12 @@
       <option name="presentableId" value="Default" />
       <updated>1536159202260</updated>
       <workItem from="1536159203692" duration="1758000" />
-      <workItem from="1536210871470" duration="782000" />
+      <workItem from="1536210871470" duration="890000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2540000" />
+    <option name="totallyTimeSpent" value="2648000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1536" height="864" extended-state="6" />
@@ -183,10 +184,10 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.30456853" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.30456853" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25067025" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25067025" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -239,7 +240,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.travis.yml" />
-    <entry file="file://$PROJECT_DIR$/web/README.md" />
     <entry file="file://$PROJECT_DIR$/api/src/main/java/com/morty/c137/biz/impl/UserBizImpl.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -264,6 +264,16 @@
         <state split_layout="SPLIT">
           <first_editor>
             <caret column="8" selection-start-column="8" selection-end-column="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="5" selection-start-column="5" selection-end-column="5" />
           </first_editor>
           <second_editor />
         </state>
