@@ -1,8 +1,8 @@
 language: java
 before_script:
-  - cd api
   - mysql -u root -e 'CREATE DATABASE job;'
 install:
+  - cd api
   - mvn install -Dmaven.test.skip=true
 script:
   - mvn clean
